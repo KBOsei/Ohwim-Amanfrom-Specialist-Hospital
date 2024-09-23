@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>MEDINOVA - Hospital Website Template</title>
+    <title>Ohwim-Amanfrom Specialist Hospital</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -72,7 +72,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand">
-                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>Medinova</h1>
+                    <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>OA Specialist Hospital</h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -190,56 +190,51 @@
 
 
     <!-- Appointment Start -->
-    <div class="container-fluid bg-primary my-5 py-5">
-        <div class="container py-5">
+    <div class="container-fluid py-5">
+        <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-6 mb-5 mb-lg-0">
                     <div class="mb-4">
-                        <h5 class="d-inline-block text-white text-uppercase border-bottom border-5">Appointment</h5>
+                        <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">Appointment</h5>
                         <h1 class="display-4">Make An Appointment For Your Family</h1>
                     </div>
-                    <p class="text-white mb-5">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
-                    <!--<a class="btn btn-dark rounded-pill py-3 px-5 me-3" href="">Find Doctor</a>
-                    <a class="btn btn-outline-dark rounded-pill py-3 px-5" href="">Read More</a>-->
+                    <!--<p class="mb-5">Eirmod sed tempor lorem ut dolores...</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 me-3" href="">Find Doctor</a>-->
+                    <a class="btn btn-outline-primary rounded-pill py-3 px-5" href="">Read More</a>
                 </div>
                 <div class="col-lg-6">
-                    <div class="bg-white text-center rounded p-5">
+                    <div class="bg-light text-center rounded p-5">
                         <h1 class="mb-4">Book An Appointment</h1>
-                        <form>
+                        <form action="https://formspree.io/f/xvgpjwlz" method="POST">
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                    <select name="department" class="form-select bg-white border-0" style="height: 55px;">
                                         <option selected>Choose Department</option>
-                                        <option value="1">Department 1</option>
-                                        <option value="2">Department 2</option>
-                                        <option value="3">Department 3</option>
+                                        <option value="Laboratory">Laboratory</option>
+                                        <option value="Eye Center">Eye Center</option>
+                                        <option value="Therapy Center">Therapy Center</option>
                                     </select>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select Doctor</option>
-                                        <option value="1">Doctor 1</option>
-                                        <option value="2">Doctor 2</option>
-                                        <option value="3">Doctor 3</option>
-                                    </select>
+                                    <input type="text" name="name" class="form-control bg-white border-0" placeholder="Your Name" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="number" name="Phone Number" class="form-control bg-white border-0" placeholder="Your Phone Number" style="height: 55px;" required>
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
-                                            placeholder="Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                        <input type="text" name="Appointment Date" class="form-control bg-white border-0 datetimepicker-input" placeholder="Date" data-target="#date" data-toggle="datetimepicker" required style="height: 55px;">
                                     </div>
                                 </div>
+                                <!--<div class="col-12 col-sm-6">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text" name="time" class="form-control bg-white border-0 datetimepicker-input" placeholder="Time" data-target="#time" data-toggle="datetimepicker" required style="height: 55px;">
+                                    </div>
+                                </div>-->
                                 <div class="col-12 col-sm-6">
                                     <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control bg-light border-0 datetimepicker-input"
+                                        <input type="text" name="Time"
+                                            class="form-control bg-white border-0 datetimepicker-input"
                                             placeholder="Time" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
                                     </div>
                                 </div>
@@ -253,6 +248,23 @@
             </div>
         </div>
     </div>
+    
+    <script type="text/javascript">
+        $(function () {
+            // Initialize Date Picker
+            $('#date').datetimepicker({
+                format: 'L', // Format for the date
+                useCurrent: false, // Important for preventing date conflicts
+                minDate: moment().startOf('day') // Disable past dates
+            });
+    
+            // Initialize Time Picker
+            $('#time').datetimepicker({
+                format: 'LT', // Format for the time
+                stepping: 30 // Optional: Set interval for time selection (30 minutes, for example)
+            });
+        });
+    </script>
     <!-- Appointment End -->
 
 
